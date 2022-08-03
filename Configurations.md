@@ -41,11 +41,11 @@ db.createUser(
 now sometimes we may want more than one mongo instance running in our machine if we have distributed space into 2 disks or more. There's no need for heavy operations here,
 we just need to create a new config file specifing a new port and a new data location, we would just call mongo and specify the coonfiguration file location:
 
-```bash
+```console
 mongod -f <route to config file> 
 ```
 ### *Config file*
-```conf
+```yaml 
 # for documentation of all options, see:
 #   http://docs.mongodb.org/manual/reference/configuration-options/
 
